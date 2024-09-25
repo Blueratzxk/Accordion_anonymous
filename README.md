@@ -1,6 +1,6 @@
 
 
-<img src="https://raw.githubusercontent.com/Blueratzxk/Accordion_cpp/master/imgs/icon.png" width="20%" />
+The icon location: imgs/icon.png
 
 # Accordion: cloud-native data analysis in accordance with your mind
 
@@ -13,7 +13,9 @@ The first IQRE (Intra-Query Runtime Elasticity) SQL query engine (prototype).
 
 **Here is a demo:**
 
-![image](https://raw.githubusercontent.com/Blueratzxk/Accordion_cpp/master/imgs/UII.gif)  
+
+
+The demo image location: imgs/UII.gif
 
 # Prerequisites
 
@@ -49,8 +51,8 @@ Accordion has the following third-party dependencies
 
 **1. Get Accordion source code from Git Hub.**
 ```
-$ git clone https://github.com/Blueratzxk/Accordion_cpp
-$ cd Accordion_cpp/
+$ git clone XXX
+$ cd Accordion/
 ```
 
 **2. Install all the dependencies.**
@@ -211,20 +213,20 @@ $ cd ..
 $ bash run.sh
 ```
 * The WEB UI of Accordion can be accessed through IP:9082 (for example, 192.168.226.137:9082). Here is an example.
- 
-![image](https://raw.githubusercontent.com/Blueratzxk/Accordion_cpp/master/imgs/UI1.png)
+
+ image location:imgs/UI1.png
 
 * Enter "run Q1S" in the left input box to run TPC-H Q1 (stand-alone version). There are 12 TPC-H queries in Accordion (Q1S ~ Q12S).
 
-![image](https://raw.githubusercontent.com/Blueratzxk/Accordion_cpp/master/imgs/UI2.png)
+ image location:imgs/UI2.png)
 
 * Click the `Controller` button to enter the query control panel, you can adjust the query stage parallelism and task parallelism.
 
-![image](https://raw.githubusercontent.com/Blueratzxk/Accordion_cpp/master/imgs/UI31.png) 
+ image location:imgs/UI31.png) 
 
 * Click the `Complete` button to get the results of the query execution. 
 
-![image](https://raw.githubusercontent.com/Blueratzxk/Accordion_cpp/master/imgs/UI4.png)  
+ image location:imgs/UI4.png)  
 
 
 # Deploying Accordion on the cloud (or in a distributed environment)
