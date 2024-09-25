@@ -450,7 +450,7 @@ public:
                     this->enqueueEndFound = true;
                 }
                 else {
-                    cout << "WTF!" << endl;
+                    cout << "No!" << endl;
                     return;
                 }
             }

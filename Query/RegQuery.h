@@ -360,7 +360,7 @@ public:
         sql.append("and l_commitdate < l_receiptdate\n");
         sql.append("and l_shipdate < l_commitdate\n");
         sql.append("and l_receiptdate >= date '[DATE]' \n");
-        sql.append("and l_receiptdate < date '[DATE]' + interval '1' year //1ÄêÖ®ÄÚ\n");
+        sql.append("and l_receiptdate < date '[DATE]' + interval '1' year \n");
         sql.append("group by \n");
         sql.append("l_shipmode\n");
         sql.append("order by\n");

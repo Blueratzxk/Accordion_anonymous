@@ -36,12 +36,12 @@ public:
         return ip+":"+port;
     }
 
-    bool operator<(const Location &p) const //注意这里的两个const
+    bool operator<(const Location &p) const
     {
         return (ip < p.ip) || (port < p.port) || (bufferId < p.bufferId);
     }
 
-    bool operator==(const Location &p) const //注意这里的两个const
+    bool operator==(const Location &p) const
     {
         return (ip == p.ip) && (port == p.port) && (bufferId == p.bufferId);
     }
