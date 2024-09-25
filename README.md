@@ -214,7 +214,7 @@ $ bash run.sh
 ```
 * The WEB UI of Accordion can be accessed through IP:9082 (for example, 192.168.226.137:9082). Here is an example.
 
-!!!!!!!!!!! image location:imgs/UI1.png !!!!!!!!!!!
+!!!!!!!!!!! image location:(This project)/imgs/UI1.png !!!!!!!!!!!
 
 * Enter "run Q1S" in the left input box to run TPC-H Q1 (stand-alone version). There are 12 TPC-H queries in Accordion (Q1S ~ Q12S).
 
