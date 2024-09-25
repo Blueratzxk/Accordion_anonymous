@@ -1,6 +1,6 @@
 
 
-!!!!!!!!!!! The icon location: (This project)/imgs/icon.png !!!!!!!!!!!
+!!!!!!!!!!! The logo location: (This project)/imgs/logo.png !!!!!!!!!!!
 
 # Accordion: cloud-native data analysis in accordance with your mind
 
