@@ -1,5 +1,5 @@
 //
-// Created by zxk on 4/15/24.
+// Created by anonymous on 4/15/24.
 //
 
 #ifndef OLVP_QUERY1_NL_HPP

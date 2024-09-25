@@ -1,5 +1,5 @@
 //
-// Created by zxk on 5/30/23.
+// Created by anonymous on 5/30/23.
 //
 
 #ifndef OLVP_NODETREESERIALIZATION_HPP
@@ -279,7 +279,7 @@ public:
         funcName->addChilds({col,suppkeyValue});
 
 
-        StringLiteral *snameValue = new StringLiteral("0","_zxk");
+        StringLiteral *snameValue = new StringLiteral("0","_anonymous");
         FunctionCall *funcName2 = new FunctionCall("0","concat","string");
         funcName2->addChilds({funcName,snameValue});
 

@@ -29,7 +29,7 @@
       "netAddr": "192.168.0.139:9080"
      }
     ],
-    "filePath": "/home/zxk/Desktop/dataSet/supplier.tbl",
+    "filePath": "/home/anonymous/Desktop/dataSet/supplier.tbl",
     "fileType": "CSV",
     "tableName": "supplier"
    },
@@ -53,7 +53,7 @@
       "netAddr": "192.168.0.139:9080"
      }
     ],
-    "filePath": "/home/zxk/Desktop/dataSet/nation.tbl",
+    "filePath": "/home/anonymous/Desktop/dataSet/nation.tbl",
     "fileType": "CSV",
     "tableName": "nation"
    },
@@ -75,7 +75,7 @@
       "netAddr": "192.168.0.139:9080"
      }
     ],
-    "filePath": "/home/zxk/Desktop/dataSet/region.tbl",
+    "filePath": "/home/anonymous/Desktop/dataSet/region.tbl",
     "fileType": "CSV",
     "tableName": "region"
    },
@@ -109,7 +109,7 @@
       "netAddr": "192.168.0.139:9080"
      }
     ],
-    "filePath": "/home/zxk/Desktop/dataSet/part.tbl",
+    "filePath": "/home/anonymous/Desktop/dataSet/part.tbl",
     "fileType": "CSV",
     "tableName": "part"
    },
@@ -135,7 +135,7 @@
       "netAddr": "192.168.0.139:9080"
      }
     ],
-    "filePath": "/home/zxk/Desktop/dataSet/partsupp.tbl",
+    "filePath": "/home/anonymous/Desktop/dataSet/partsupp.tbl",
     "fileType": "CSV",
     "tableName": "partsupp"
    },
@@ -167,7 +167,7 @@
       "netAddr": "192.168.0.139:9080"
      }
     ],
-    "filePath": "/home/zxk/Desktop/dataSet/customer.tbl",
+    "filePath": "/home/anonymous/Desktop/dataSet/customer.tbl",
     "fileType": "CSV",
     "tableName": "customer"
    },
@@ -213,7 +213,7 @@
       "netAddr": "192.168.0.139:9080"
      }
     ],
-    "filePath": "/home/zxk/Desktop/dataSet/orders.tbl",
+    "filePath": "/home/anonymous/Desktop/dataSet/orders.tbl",
     "fileType": "CSV",
     "tableName": "orders"
    },
@@ -273,7 +273,7 @@
       "netAddr": "192.168.0.139:9080"
      }
     ],
-    "filePath": "/media/zxk/Samsung_T5/dataSet/lineitem.tbl",
+    "filePath": "/media/anonymous/Samsung_T5/dataSet/lineitem.tbl",
     "fileType": "CSV",
     "tableName": "lineitem"
    }

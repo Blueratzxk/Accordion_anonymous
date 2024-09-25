@@ -1,5 +1,5 @@
 //
-// Created by zxk on 6/18/23.
+// Created by anonymous on 6/18/23.
 //
 
 #ifndef OLVP_TABLESCANDESCRIPTOR_HPP

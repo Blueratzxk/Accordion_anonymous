@@ -1,5 +1,5 @@
 //
-// Created by zxk on 9/15/23.
+// Created by anonymous on 9/15/23.
 //
 
 #ifndef OLVP_QUERY2_HASH_HPP

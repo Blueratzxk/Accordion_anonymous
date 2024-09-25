@@ -1,5 +1,5 @@
 //
-// Created by zxk on 5/16/23.
+// Created by anonymous on 5/16/23.
 //
 
 #ifndef OLVP_TABLESCANOPERATOR_HPP

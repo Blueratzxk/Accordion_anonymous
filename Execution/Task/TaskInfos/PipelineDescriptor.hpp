@@ -1,5 +1,5 @@
 //
-// Created by zxk on 6/9/23.
+// Created by anonymous on 6/9/23.
 //
 
 #ifndef OLVP_PIPELINEDESCRIPTOR_HPP

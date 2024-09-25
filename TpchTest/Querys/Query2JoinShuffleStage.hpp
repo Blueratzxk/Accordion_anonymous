@@ -1,5 +1,5 @@
 //
-// Created by zxk on 5/22/24.
+// Created by anonymous on 5/22/24.
 //
 
 #ifndef OLVP_QUERY2JOINSHUFFLESTAGE_HPP

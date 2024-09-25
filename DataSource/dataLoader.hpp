@@ -1,5 +1,5 @@
 //
-// Created by zxk on 5/15/23.
+// Created by anonymous on 5/15/23.
 //
 
 #ifndef OLVP_DATALOADER_HPP
@@ -33,7 +33,7 @@ public:
     {
 
         arrow::io::IOContext io_context = arrow::io::default_io_context();
-        std::shared_ptr<arrow::io::InputStream> input = arrow::io::ReadableFile::Open("/home/zxk/Desktop/dataSet/supplier.tbl").ValueOrDie();
+        std::shared_ptr<arrow::io::InputStream> input = arrow::io::ReadableFile::Open("/home/anonymous/Desktop/dataSet/supplier.tbl").ValueOrDie();
 
 
         auto read_options = arrow::csv::ReadOptions::Defaults();

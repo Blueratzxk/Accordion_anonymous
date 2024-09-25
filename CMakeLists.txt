@@ -328,11 +328,11 @@ add_executable(Accordion main.cpp
 
 
 include_directories(
-        "/home/zxk/open-codes/json/include/"
+        "/home/anonymous/open-codes/json/include/"
         "/usr/local/include/"
         "/usr/local/include/restclient-cpp"
-        "/home/zxk/.local/include"
-        "/home/zxk/open-codes/oneapi-tbb-2021.9.0/include"
+        "/home/anonymous/.local/include"
+        "/home/anonymous/open-codes/oneapi-tbb-2021.9.0/include"
 
 )
 
@@ -346,5 +346,5 @@ target_link_libraries(
         arrow_acero
         arrow_flight
         gandiva
-        /home/zxk/open-codes/oneapi-tbb-2021.9.0/lib/intel64/gcc4.8/libtbb.so
+        /home/anonymous/open-codes/oneapi-tbb-2021.9.0/lib/intel64/gcc4.8/libtbb.so
 )

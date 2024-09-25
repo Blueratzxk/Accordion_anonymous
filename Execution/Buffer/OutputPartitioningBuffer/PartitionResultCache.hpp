@@ -1,5 +1,5 @@
 //
-// Created by zxk on 9/18/23.
+// Created by anonymous on 9/18/23.
 //
 
 #ifndef OLVP_PARTITIONRESULTCACHE_HPP

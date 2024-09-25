@@ -1,5 +1,5 @@
 //
-// Created by zxk on 5/18/23.
+// Created by anonymous on 5/18/23.
 //
 
 #ifndef OLVP_ASTNODEVIEWER_HPP
@@ -74,7 +74,7 @@ public:
    {
 
        StringLiteral *name = new StringLiteral("1","Name");
-       StringLiteral *nameCom = new StringLiteral("1","zxk");
+       StringLiteral *nameCom = new StringLiteral("1","anonymous");
        FunctionCall *funcName = new FunctionCall("1","like","boolean");
        funcName->addChilds({name,nameCom});
 

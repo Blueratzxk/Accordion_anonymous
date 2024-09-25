@@ -1,5 +1,5 @@
 //
-// Created by zxk on 5/25/23.
+// Created by anonymous on 5/25/23.
 //
 
 #ifndef OLVP_HASHBUILDEROPERATOR_HPP

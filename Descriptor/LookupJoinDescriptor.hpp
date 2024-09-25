@@ -1,5 +1,5 @@
 //
-// Created by zxk on 5/30/23.
+// Created by anonymous on 5/30/23.
 //
 
 #ifndef OLVP_LOOKUPJOINDESCRIPTOR_HPP

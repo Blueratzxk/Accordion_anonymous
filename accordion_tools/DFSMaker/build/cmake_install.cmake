@@ -1,4 +1,4 @@
-# Install script for directory: /home/zxk/CLionProjects/Accordion_cpp/accordion_tools/DFSMaker
+# Install script for directory: /home/anonymous/CLionProjects/Accordion_cpp/accordion_tools/DFSMaker
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/zxk/CLionProjects/Accordion_cpp/accordion_tools/DFSMaker/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/anonymous/CLionProjects/Accordion_cpp/accordion_tools/DFSMaker/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

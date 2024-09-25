@@ -1,5 +1,5 @@
 //
-// Created by zxk on 7/29/24.
+// Created by anonymous on 7/29/24.
 //
 
 #ifndef OLVP_JOININFODESCRIPTOR_HPP

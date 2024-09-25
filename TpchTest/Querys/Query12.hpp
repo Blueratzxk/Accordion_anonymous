@@ -1,5 +1,5 @@
 //
-// Created by zxk on 6/29/23.
+// Created by anonymous on 6/29/23.
 //
 
 #ifndef OLVP_QUERY12_HPP

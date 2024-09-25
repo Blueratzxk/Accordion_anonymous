@@ -1,5 +1,5 @@
 //
-// Created by zxk on 5/28/23.
+// Created by anonymous on 5/28/23.
 //
 
 #ifndef OLVP_LOGICAL_PARTIALAGGREGATIONOPERATOR_HPP

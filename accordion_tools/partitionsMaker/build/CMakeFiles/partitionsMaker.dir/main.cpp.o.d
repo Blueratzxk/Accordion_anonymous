@@ -1,5 +1,5 @@
 CMakeFiles/partitionsMaker.dir/main.cpp.o: \
- /home/zxk/CLionProjects/Accordion_cpp/accordion_tools/partitionsMaker/main.cpp \
+ /home/anonymous/CLionProjects/Accordion_cpp/accordion_tools/partitionsMaker/main.cpp \
  /usr/include/stdc-predef.h /usr/include/x86_64-linux-gnu/sys/stat.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

@@ -1,5 +1,5 @@
 //
-// Created by zxk on 11/24/23.
+// Created by anonymous on 11/24/23.
 //
 
 #ifndef OLVP_SESSIONREPRESENTATION_HPP

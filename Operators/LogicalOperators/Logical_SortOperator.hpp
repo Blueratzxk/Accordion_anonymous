@@ -1,5 +1,5 @@
 //
-// Created by zxk on 5/20/23.
+// Created by anonymous on 5/20/23.
 //
 
 #ifndef OLVP_LOGICAL_SORTOPERATOR_HPP

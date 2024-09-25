@@ -1,5 +1,5 @@
 //
-// Created by zxk on 5/19/23.
+// Created by anonymous on 5/19/23.
 //
 
 #ifndef OLVP_PROJECTDESCRIPTOR_HPP
@@ -254,7 +254,7 @@ public:
         funcName->addChilds({col,suppkeyValue});
 
 
-        StringLiteral *snameValue = new StringLiteral("0","_zxk");
+        StringLiteral *snameValue = new StringLiteral("0","_anonymous");
         Column *col2 = new Column("0","s_name","string");
         FunctionCall *funcName2 = new FunctionCall("0","concat","string");
         funcName2->addChilds({col2,snameValue});

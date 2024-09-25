@@ -1,5 +1,5 @@
 //
-// Created by zxk on 5/17/23.
+// Created by anonymous on 5/17/23.
 //
 
 #ifndef OLVP_TPCHTABLEHANDLE_HPP

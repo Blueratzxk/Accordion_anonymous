@@ -1,5 +1,5 @@
 //
-// Created by zxk on 6/28/24.
+// Created by anonymous on 6/28/24.
 //
 
 #ifndef OLVP_QUERY4_NL_MULHASHBUILD_HPP

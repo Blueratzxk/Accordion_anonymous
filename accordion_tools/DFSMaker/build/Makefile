@@ -57,10 +57,10 @@ RM = /snap/clion/292/bin/cmake/linux/x64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zxk/CLionProjects/Accordion_cpp/accordion_tools/DFSMaker
+CMAKE_SOURCE_DIR = /home/anonymous/CLionProjects/Accordion_cpp/accordion_tools/DFSMaker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zxk/CLionProjects/Accordion_cpp/accordion_tools/DFSMaker/build
+CMAKE_BINARY_DIR = /home/anonymous/CLionProjects/Accordion_cpp/accordion_tools/DFSMaker/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zxk/CLionProjects/Accordion_cpp/accordion_tools/DFSMaker/build/CMakeFiles /home/zxk/CLionProjects/Accordion_cpp/accordion_tools/DFSMaker/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anonymous/CLionProjects/Accordion_cpp/accordion_tools/DFSMaker/build/CMakeFiles /home/anonymous/CLionProjects/Accordion_cpp/accordion_tools/DFSMaker/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zxk/CLionProjects/Accordion_cpp/accordion_tools/DFSMaker/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anonymous/CLionProjects/Accordion_cpp/accordion_tools/DFSMaker/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

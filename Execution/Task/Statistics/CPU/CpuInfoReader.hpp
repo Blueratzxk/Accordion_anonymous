@@ -1,5 +1,5 @@
 //
-// Created by zxk on 7/6/24.
+// Created by anonymous on 7/6/24.
 //
 
 #ifndef OLVP_CPUINFOREADER_HPP

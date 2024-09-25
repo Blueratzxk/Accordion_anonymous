@@ -1,5 +1,5 @@
 //
-// Created by zxk on 9/28/23.
+// Created by anonymous on 9/28/23.
 //
 
 #ifndef OLVP_QUERY8_SHUFFLESTAGE_HPP

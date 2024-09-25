@@ -1,5 +1,5 @@
 //
-// Created by zxk on 6/1/23.
+// Created by anonymous on 6/1/23.
 //
 
 #ifndef OLVP_LOGICAL_REMOTESOURCEOPERATOR_HPP

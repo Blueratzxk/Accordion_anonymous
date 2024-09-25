@@ -1,5 +1,5 @@
 //
-// Created by zxk on 1/13/24.
+// Created by anonymous on 1/13/24.
 //
 
 #ifndef OLVP_QUERY2SJOIN_HPP

@@ -1,5 +1,5 @@
 //
-// Created by zxk on 6/29/24.
+// Created by anonymous on 6/29/24.
 //
 
 #ifndef OLVP_QUERY_SUPPLIERJOINSUPPLIER_HPP

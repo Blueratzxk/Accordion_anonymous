@@ -1,5 +1,5 @@
 //
-// Created by zxk on 12/22/23.
+// Created by anonymous on 12/22/23.
 //
 
 #ifndef OLVP_NODETYPECONFIG_HPP
