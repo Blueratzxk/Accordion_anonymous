@@ -1,6 +1,6 @@
 
 
-!!!!!!!!!!! The icon location: imgs/icon.png !!!!!!!!!!!
+!!!!!!!!!!! The icon location: (This project)/imgs/icon.png !!!!!!!!!!!
 
 # Accordion: cloud-native data analysis in accordance with your mind
 
@@ -14,7 +14,7 @@ The first IQRE (Intra-Query Runtime Elasticity) SQL query engine (prototype).
 **Here is a demo:**
 
 
-!!!!!!!!!!! The demo GIF location: imgs/UII.gif !!!!!!!!!!!
+!!!!!!!!!!! The demo GIF location: (This project)/imgs/UII.gif !!!!!!!!!!!
 
 
 # Prerequisites
@@ -218,15 +218,15 @@ $ bash run.sh
 
 * Enter "run Q1S" in the left input box to run TPC-H Q1 (stand-alone version). There are 12 TPC-H queries in Accordion (Q1S ~ Q12S).
 
-!!!!!!!!!!! image location:imgs/UI2.png) !!!!!!!!!!!
+!!!!!!!!!!! image location:(This project)/imgs/UI2.png) !!!!!!!!!!!
 
 * Click the `Controller` button to enter the query control panel, you can adjust the query stage parallelism and task parallelism.
 
-!!!!!!!!!!! image location:imgs/UI31.png) !!!!!!!!!!!
+!!!!!!!!!!! image location:(This project)/imgs/UI31.png) !!!!!!!!!!!
 
 * Click the `Complete` button to get the results of the query execution. 
 
-!!!!!!!!!!! image location:imgs/UI4.png) !!!!!!!!!!!
+!!!!!!!!!!! image location:(This project)/imgs/UI4.png) !!!!!!!!!!!
 
 
 # Deploying Accordion on the cloud (or in a distributed environment)
