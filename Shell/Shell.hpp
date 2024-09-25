@@ -222,7 +222,7 @@ public:
     {
         std::string dst_str = resource_str;
         std::string::size_type pos = 0;
-        while((pos = dst_str.find(sub_str)) != std::string::npos)   //替换所有指定子串
+        while((pos = dst_str.find(sub_str)) != std::string::npos)
         {
             dst_str.replace(pos, sub_str.length(), new_str);
         }

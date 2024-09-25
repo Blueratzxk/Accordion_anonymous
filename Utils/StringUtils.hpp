@@ -14,9 +14,9 @@ class StringUtils
 {
     static void Stringsplit(std::string str, const const char split,std::vector<std::string>& res)
     {
-        std::istringstream iss(str);	// 输入流
-        std::string token;			// 接收缓冲区
-        while (getline(iss, token, split))	// 以split为分隔符
+        std::istringstream iss(str);
+        std::string token;
+        while (getline(iss, token, split))
         {
             res.push_back(token);
         }

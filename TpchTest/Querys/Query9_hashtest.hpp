@@ -13,14 +13,14 @@
  select
 nation,
 o_year,
-sum(amount) as sum_profit //每个国家每一年所有被定购的零件在一年中的总利润
+sum(amount) as sum_profit //
 from
 (select
-n_name as nation, //国家
-extract(year from o_orderdate) as o_year, //取出年份
-l_extendedprice * (1 - l_discount) - ps_supplycost * l_quantity as amount //利润
+n_name as nation, //
+extract(year from o_orderdate) as o_year, //
+l_extendedprice * (1 - l_discount) - ps_supplycost * l_quantity as amount //
 from
-part,supplier,lineitem,partsupp,orders,nation //六表连接
+part,supplier,lineitem,partsupp,orders,nation //
 where
 s_suppkey = l_suppkey
 and ps_suppkey = l_suppkey
@@ -28,12 +28,12 @@ and ps_partkey = l_partkey
 and p_partkey = l_partkey
 and o_orderkey = l_orderkey
 and s_nationkey = n_nationkey
-and p_name like '%[COLOR]%' //LIKE操作，查询优化器可能进行优化
+and p_name like '%[COLOR]%' //LIKE，
 ) as profit
-group by //按国家和年份分组
+group by //
 nation,
 o_year
-order by //按国家和年份排序，年份大者靠前
+order by //，
 nation,
 o_year desc;
 

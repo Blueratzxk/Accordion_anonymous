@@ -30,12 +30,12 @@ public:
         return this->id;
     }
 
-    bool operator<(const StageExecutionId &p) const //注意这里的两个const
+    bool operator<(const StageExecutionId &p) const //const
     {
         return (id < p.id) || (stageId < p.stageId);
     }
 
-    bool operator==(const StageExecutionId &p) const //注意这里的两个const
+    bool operator==(const StageExecutionId &p) const //const
     {
         return (id == p.id) || (stageId == p.stageId);
     }

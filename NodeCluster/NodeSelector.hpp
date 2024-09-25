@@ -45,10 +45,10 @@ public:
 
             return nodes;
         }
-        random_device seed;//硬件生成随机数种子
-        ranlux48 engine(seed());//利用种子生成随机数引擎
-        uniform_int_distribution<> distrib(min, max);//设置随机数范围，并为均匀分布
-        int random = distrib(engine);//随机数
+        random_device seed;
+        ranlux48 engine(seed());
+        uniform_int_distribution<> distrib(min, max);
+        int random = distrib(engine);
         nodes.push_back(ClusterServer::getNodesManager()->getAllNodes()[random]);
         return nodes;
     }
@@ -62,11 +62,11 @@ public:
 
             return nodes;
         }
-        random_device seed;//硬件生成随机数种子
-        ranlux48 engine(seed());//利用种子生成随机数引擎
-        uniform_int_distribution<> distrib(min, max);//设置随机数范围，并为均匀分布
+        random_device seed;
+        ranlux48 engine(seed());
+        uniform_int_distribution<> distrib(min, max);
         for(int i = 0 ; i < num ; i++) {
-            int random = distrib(engine);//随机数
+            int random = distrib(engine);
             nodes.push_back(ClusterServer::getNodesManager()->getAllNodes()[random]);
         }
         return nodes;

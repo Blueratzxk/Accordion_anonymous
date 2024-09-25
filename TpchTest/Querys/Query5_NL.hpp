@@ -12,9 +12,9 @@
 
 select
 n_name,
-sum(l_extendedprice * (1 - l_discount)) as revenue //聚集操作
+sum(l_extendedprice * (1 - l_discount)) as revenue //
 from
-customer,orders,lineitem,supplier,nation,region //六表连接
+customer,orders,lineitem,supplier,nation,region //
 where
 c_custkey = o_custkey
 and l_orderkey = o_orderkey
@@ -22,12 +22,12 @@ and l_suppkey = s_suppkey
 and c_nationkey = s_nationkey
 and s_nationkey = n_nationkey
 and n_regionkey = r_regionkey
-and r_name = '[REGION]' //指定地区，在TPC-H标准指定的范围内随机选择
-and o_orderdate >= date '[DATE]' //DATE是从1993年到1997年中随机选择的一年的1月1日
+and r_name = '[REGION]' //，TPC-H
+and o_orderdate >= date '[DATE]' //DATE1993199711
 and o_orderdate < date '[DATE]' + interval '1' year
-group by //按名字分组
+group by //
 n_name
-order by //按收入降序排序，注意分组和排序子句不同
+order by //，
 revenue desc;
 
 */

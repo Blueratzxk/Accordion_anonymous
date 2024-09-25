@@ -10,13 +10,13 @@
 /*
 
  select
-o_orderpriority, //订单优先级
-count(*) as order_count //订单优先级计数
-from orders //单表查询
+o_orderpriority, //
+count(*) as order_count //
+from orders //
 where
 o_orderdate >= date '[DATE]'
-and o_orderdate < date '[DATE]' + interval '3' month //指定订单的时间段--某三个月，DATE是在1993年1月和1997年10月之间随机选择的一个月的第一天
-and exists ( //子查询
+and o_orderdate < date '[DATE]' + interval '3' month //--，DATE19931199710
+and exists ( //
 select
 *
 from
@@ -25,9 +25,9 @@ where
 l_orderkey = o_orderkey
 and l_commitdate < l_receiptdate
 )
-group by //按订单优先级分组
+group by //
 o_orderpriority
-order by //按订单优先级排序
+order by //
 o_orderpriority;
 
  * */
@@ -247,7 +247,7 @@ int64|double|double|date32[day]|string|int64|
 
 
       l_orderkey,
-sum(l_extendedprice*(1-l_discount)) as revenue, //潜在的收入，聚集操作
+sum(l_extendedprice*(1-l_discount)) as revenue, //，
 o_orderdate,
      o_shippriority
 */

@@ -7,19 +7,19 @@
 
 /*
  select
-o_year, //年份
+o_year,
 sum(case
-when nation = '[NATION]'//指定国家，在TPC-H标准指定的范围内随机选择
+when nation = '[NATION]'
 then volume
 else 0
-end) / sum(volume) as mkt_share //市场份额：特定种类的产品收入的百分比；聚集操作
-from //子查询
+end) / sum(volume) as mkt_share
+from
 (select
-extract(year from o_orderdate) as o_year, //分解出年份
-l_extendedprice * (1-l_discount) as volume, //特定种类的产品收入
+extract(year from o_orderdate) as o_year,
+l_extendedprice * (1-l_discount) as volume,
 n2.n_name as nation
 from
-part,supplier,lineitem,orders,customer,nation n1,nation n2,region //八表连接
+part,supplier,lineitem,orders,customer,nation n1,nation n2,region
 where
 p_partkey = l_partkey
 and s_suppkey = l_suppkey
@@ -27,14 +27,14 @@ and l_orderkey = o_orderkey
 and o_custkey = c_custkey
 and c_nationkey = n1.n_nationkey
 and n1.n_regionkey = r_regionkey
-and r_name = '[REGION]' //指定地区，在TPC-H标准指定的范围内随机选择
+and r_name = '[REGION]' //，TPC-H
 and s_nationkey = n2.n_nationkey
-and o_orderdate between date '1995-01-01' and date '1996-12-31' //只查95、96年的情况
-and p_type = '[TYPE]' //指定零件类型，在TPC-H标准指定的范围内随机选择
+and o_orderdate between date '1995-01-01' and date '1996-12-31' //95、96
+and p_type = '[TYPE]' //，TPC-H
 ) as all_nations
-group by //按年分组
+group by //
 o_year
-order by //按年排序
+order by //
 o_year;
 
  * */

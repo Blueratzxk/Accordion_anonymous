@@ -25,11 +25,11 @@ public:
         if (fileName == NULL) {
             return 0;
         }
-        // 这是一个存储文件(夹)信息的结构体，其中有文件大小和创建时间、访问时间、修改时间等
+
         struct stat statbuf;
-        // 提供文件名字符串，获得文件属性结构体
+
         stat(fileName, &statbuf);
-        // 获取文件大小
+
         size_t filesize = statbuf.st_size;
         return filesize;
     }
@@ -263,9 +263,9 @@ public:
 
     void Stringsplit(std::string str, const char split,std::vector<std::string>& res)
     {
-        std::istringstream iss(str);	// 输入流
-        std::string token;			// 接收缓冲区
-        while (getline(iss, token, split))	// 以split为分隔符
+        std::istringstream iss(str);
+        std::string token;
+        while (getline(iss, token, split))
         {
             res.push_back(token);
         }

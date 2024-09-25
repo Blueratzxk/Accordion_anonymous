@@ -135,8 +135,8 @@ public:
         sleep(sampleGap);
         sampleBeta();
         computeRate(sampleGap);
-        // std::cout << "接收速率： " << receivedRate << " KB/s" << std::endl;
-        //  std::cout << "发送速率： " << transmittedRate << " KB/s" << std::endl;
+        // std::cout << "： " << receivedRate << " KB/s" << std::endl;
+        //  std::cout << "： " << transmittedRate << " KB/s" << std::endl;
     }
 
     double getReceivedRate()

@@ -9,23 +9,23 @@
 /*
  select
 	l_orderkey,
-	sum(l_extendedprice*(1-l_discount)) as revenue, //潜在的收入，聚集操作
+	sum(l_extendedprice*(1-l_discount)) as revenue, //，
 	o_orderdate,
 	o_shippriority
 from
-	customer, orders, lineitem //三表连接
+	customer, orders, lineitem //
 where
-	c_mktsegment = '[SEGMENT]' //在TPC-H标准指定的范围内随机选择
+	c_mktsegment = '[SEGMENT]' //TPC-H
 	and c_custkey = o_custkey
 	and l_orderkey = o_orderkey
-	and o_orderdate < date '[DATE]' //指定日期段，在在[1995-03-01, 1995-03-31]中随机选择
+	and o_orderdate < date '[DATE]' //，[1995-03-01, 1995-03-31]
 	and l_shipdate > date '[DATE]'
-group by //分组操作
-	l_orderkey, //订单标识
-	o_orderdate, //订单日期
-	o_shippriority //运输优先级
-order by //排序操作
-	revenue desc, //降序排序，把潜在最大收入列在前面
+group by //
+	l_orderkey, //
+	o_orderdate, //
+	o_shippriority //
+order by //
+	revenue desc, //，
 	o_orderdate;
  */
 
@@ -327,7 +327,7 @@ int64|double|double|date32[day]|string|int64|
 
 
       l_orderkey,
-sum(l_extendedprice*(1-l_discount)) as revenue, //潜在的收入，聚集操作
+sum(l_extendedprice*(1-l_discount)) as revenue, //，
 o_orderdate,
      o_shippriority
 */
@@ -376,15 +376,15 @@ o_orderdate,
 
 
          l_orderkey,
-   sum(l_extendedprice*(1-l_discount)) as revenue, //潜在的收入，聚集操作
+   sum(l_extendedprice*(1-l_discount)) as revenue, //，
    o_orderdate,
         o_shippriority
    ----------------------------------------
-   l_orderkey, //订单标识
-   o_orderdate, //订单日期
-   o_shippriority //运输优先级
-   order by //排序操作
-   revenue desc, //降序排序，把潜在最大收入列在前面
+   l_orderkey, //
+   o_orderdate, //
+   o_shippriority //
+   order by //
+   revenue desc, //，
    o_orderdate;
 
 

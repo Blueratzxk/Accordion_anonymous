@@ -25,11 +25,11 @@ public:
         return this->id;
     }
 
-    bool operator<(const QueryId &p) const //注意这里的两个const
+    bool operator<(const QueryId &p) const //const
     {
         return (id < p.id);
     }
-    bool operator==(const QueryId &p) const //注意这里的两个const
+    bool operator==(const QueryId &p) const //const
     {
         return (id == p.id);
     }

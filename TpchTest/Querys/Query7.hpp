@@ -9,24 +9,24 @@
 #include "../../Query/RegQuery.h"
 /*
 select
-supp_nation, //供货商国家
-cust_nation, //顾客国家
-l_year, sum(volume) as revenue //年度、年度的货运收入
-from ( //子查询
+supp_nation,
+cust_nation,
+l_year, sum(volume) as revenue
+from (
 select
 n1.n_name as supp_nation,
 n2.n_name as cust_nation,
 extract(year from l_shipdate) as l_year,
 l_extendedprice * (1 - l_discount) as volume
 from
-supplier,lineitem,orders,customer,nation n1,nation n2 //六表连接
+supplier,lineitem,orders,customer,nation n1,nation n2
 where
 s_suppkey = l_suppkey
 and o_orderkey = l_orderkey
 and c_custkey = o_custkey
 and s_nationkey = n1.n_nationkey
 and c_nationkey = n2.n_nationkey
-and ( // NATION2和NATION1的值不同，表示查询的是跨国的货运情况
+and (
 (n1.n_name = 'CANADA' and n2.n_name = 'AMERICA')
 or (n1.n_name = 'AMERICA' and n2.n_name = 'CANADA')
 )

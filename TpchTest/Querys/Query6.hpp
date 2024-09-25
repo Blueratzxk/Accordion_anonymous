@@ -9,14 +9,14 @@
 #include "../../Query/RegQuery.h"
 /*
 select
-sum(l_extendedprice*l_discount) as revenue //潜在的收入增加量
+sum(l_extendedprice*l_discount) as revenue
 from
-lineitem //单表查询
+lineitem
 where
-l_shipdate >= date '[DATE]' //DATE是从[1993, 1997]中随机选择的一年的1月1日
-and l_shipdate < date '[DATE]' + interval '1' year //一年内
+l_shipdate >= date '[DATE]'
+and l_shipdate < date '[DATE]' + interval '1' year
 and l_discount between [DISCOUNT] - 0.01 and [DISCOUNT] + 0.01 //between
-and l_quantity < [QUANTITY]; // QUANTITY在区间[24, 25]中随机选择
+and l_quantity < [QUANTITY];
 */
 
 
@@ -71,10 +71,10 @@ public:
 
 
         /*
-         l_shipdate >= date '[DATE]' //DATE是从[1993, 1997]中随机选择的一年的1月1日
-            and l_shipdate < date '[DATE]' + interval '1' year //一年内
-            and l_discount between [DISCOUNT] - 0.01 and [DISCOUNT] + 0.01 //between
-            and l_quantity < [QUANTITY]; // QUANTITY在区间[24, 25]中随机选择
+         l_shipdate >= date '[DATE]'
+            and l_shipdate < date '[DATE]' + interval '1' year
+            and l_discount between [DISCOUNT] - 0.01 and [DISCOUNT] + 0.01
+            and l_quantity < [QUANTITY];
          * */
 
 
@@ -224,8 +224,8 @@ public:
     {
 
         /*
-        sum(l_quantity) as sum_qty, //总的数量
-        sum(l_extendedprice) as sum_base_price, //聚集函数操作
+        sum(l_quantity) as sum_qty,
+        sum(l_extendedprice) as sum_base_price,
         sum(l_extendedprice * (1 - l_discount)) as sum_disc_price,
         sum(l_extendedprice * (1 - l_discount) * (1 + l_tax)) as sum_charge,
         avg(l_quantity) as avg_qty,
@@ -250,8 +250,8 @@ public:
     {
 
         /*
-        sum(l_quantity) as sum_qty, //总的数量
-        sum(l_extendedprice) as sum_base_price, //聚集函数操作
+        sum(l_quantity) as sum_qty, //
+        sum(l_extendedprice) as sum_base_price, //
         sum(l_extendedprice * (1 - l_discount)) as sum_disc_price,
         sum(l_extendedprice * (1 - l_discount) * (1 + l_tax)) as sum_charge,
         avg(l_quantity) as avg_qty,

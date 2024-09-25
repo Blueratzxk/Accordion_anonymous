@@ -55,11 +55,11 @@ public:
         return this->stageExecutionId.getStageId();
     }
 
-    bool operator<(const TaskId &p) const //注意这里的两个const
+    bool operator<(const TaskId &p) const //const
     {
         return (id < p.id) || (stageExecutionId < p.stageExecutionId);
     }
-    bool operator==(const TaskId &p) const //注意这里的两个const
+    bool operator==(const TaskId &p) const //const
     {
         return (id == p.id) || (stageExecutionId == p.stageExecutionId);
     }

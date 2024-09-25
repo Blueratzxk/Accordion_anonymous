@@ -148,7 +148,7 @@ public:
 
 
 
-//这里主要是实现生成logical operator，以及生成相应的连接结构，解析localexchange和join会生成pipeline
+
 class LocalPlanNodeTreeBreaker : public NodeVisitor {
 
 private:

@@ -23,7 +23,7 @@ public:
        return this->id;
     }
 
-    bool operator<(const PipelineId &p) const //注意这里的两个const
+    bool operator<(const PipelineId &p) const
     {
         return id < p.id ;
     }

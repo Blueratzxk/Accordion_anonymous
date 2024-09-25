@@ -9,18 +9,18 @@
 
 /*
 select
-c_custkey, c_name, //客户信息
-sum(l_extendedprice * (1 - l_discount)) as revenue, //收入损失
+c_custkey, c_name, //
+sum(l_extendedprice * (1 - l_discount)) as revenue, //
 c_acctbal,
-n_name, c_address, c_phone, c_comment //国家、地址、电话、意见信息等
+n_name, c_address, c_phone, c_comment //、、、
 from
 customer, orders, lineitem, nation
 where
 c_custkey = o_custkey
 and l_orderkey = o_orderkey
-and o_orderdate >= date '[DATE]' // DATE是位于1993年一月到1994年十二月中任一月的一号
-and o_orderdate < date '[DATE]' + interval '3' month //3个月内
-and l_returnflag = 'R' //货物被回退
+and o_orderdate >= date '[DATE]' // DATE19931994
+and o_orderdate < date '[DATE]' + interval '3' month //3
+and l_returnflag = 'R' //
 and c_nationkey = n_nationkey
 group by
 c_custkey,

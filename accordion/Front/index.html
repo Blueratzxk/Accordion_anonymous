@@ -1361,25 +1361,24 @@ var serverIp = '192.168.226.129:9080'
 	function getData()
 	{
 		$.ajax({
-            // 设置ajax的参数
-            // 请求数据的url地址：接口地址
+
             url: 'http://'+serverIp+'/v1/query/getAllQueryInfoExtern',  
-            // 请求数据方式：get  post
+
             type: 'get',    
-            // 返回的数据格式  json
+
             dataType: 'json',
-            // data:发送给接口的数据
+
             data:{},
-            // 请求成功之后要执行的回调函数
+
             success: function (dat) {
-                //dat:服务端返回的数据
+
                 console.log(dat)
 		
 				for(var i = 0 ; i < dat.length ; i++)
 					resolveJsonAddBar(dat[i]);
 					
             },
-            // 请求失败
+
             error: function (e) {
                 
 				for(var queryId in queryId_queryDiv)
@@ -1425,18 +1424,18 @@ var serverIp = '192.168.226.129:9080'
 		var promptStr = 'SQL>';
 	
         let term = new Terminal({
-        rendererType: "canvas", //渲染类型
-        rows: rowsValue, //行数
-        cols: colsValue, // 不指定行数，自动回车后光标从下一行开始
-        convertEol: true, //启用时，光标将设置为下一行的开头
-        // scrollback: 50, //终端中的回滚量
-        disableStdin: false, //是否应禁用输入
-        // cursorStyle: "underline", //光标样式
-        cursorBlink: true, //光标闪烁
+        rendererType: "canvas", /
+        rows: rowsValue,
+        cols: colsValue,
+        convertEol: true,
+        // scrollback: 50,
+        disableStdin: false,
+        // cursorStyle: "underline",
+        cursorBlink: true,
         theme: {
-          foreground: "#ffffff", //字体
-          background: "#000000", //背景色
-          cursor: "help", //设置光标
+          foreground: "#ffffff",
+          background: "#000000",
+          cursor: "help",
           lineHeight: 20
 		
         }
@@ -1445,9 +1444,9 @@ var serverIp = '192.168.226.129:9080'
 	
 	  
 	  
-      // 创建terminal实例
+
       term.open(document.getElementById('terminal'))
-      // 换行并输入起始符 $
+
       term.prompt = _ => {
        // term.write("\r\n\x1b[33m"+promptStr+"\x1b[0m")
 	   term.write("\r\n\x1b[1;32m"+promptStr+"\x1b[0m")
@@ -1457,7 +1456,7 @@ var serverIp = '192.168.226.129:9080'
       term.writeln('This is Web Terminal of Accordion DB!')
       term.prompt()
 	  
-      // canvas背景全屏
+
       const fitAddon = new FitAddon.FitAddon()
       term.loadAddon(fitAddon)
       fitAddon.fit()
@@ -1471,7 +1470,7 @@ var serverIp = '192.168.226.129:9080'
 
       window.addEventListener("resize", resizeScreen)
       function resizeScreen() {
-        try { // 窗口大小改变时，触发xterm的resize方法使自适应
+        try {
 		
 		fitAddon.fit()
 		
@@ -1533,7 +1532,7 @@ var serverIp = '192.168.226.129:9080'
 		 }
 		  
 		  
-        } else if (e.domEvent.keyCode === 8) { // back 删除的情况
+        } else if (e.domEvent.keyCode === 8) {
 		console.log(term._core.buffer.x);
 		 console.log(term._core.buffer.y);
           if (curcommandStartY != term._core.buffer.y) {
@@ -1570,7 +1569,7 @@ var serverIp = '192.168.226.129:9080'
 		}
         console.log(1,'print', e.key)
       })
-      term.onData(key => {  // 粘贴的情况
+      term.onData(key => {
         if(key.length > 1) term.write(key)
       })
 	  
@@ -1582,30 +1581,29 @@ var serverIp = '192.168.226.129:9080'
 	   
 	    
 		cmdajax = $.ajax({
-            // 设置ajax的参数
-            // 请求数据的url地址：接口地址
+
             url: 'http://'+serverIp+'/v1/sql/runSqlFromWebExtern/'+sql,  
-            // 请求数据方式：get  post
+
             type: 'get',    
-            // 返回的数据格式  json
+
             dataType: 'text',
 		
 			async : false,
-            // data:发送给接口的数据
+
             data:{},
-            // 请求成功之后要执行的回调函数
+
             success: function (dat) {
                 cmdresult = dat;
 				console.log(cmdresult);
                 
             },
-            // 请求失败
+
             error: function (e) {
                 cmdresult = 'Server offline.';
 						
             },
 			complete:function(XHR,TextStatus){
-              if(TextStatus=='timeout'){ //超时执行的程序
+              if(TextStatus=='timeout'){
                     cmdresult = 'Server offline.';
                 }
             }

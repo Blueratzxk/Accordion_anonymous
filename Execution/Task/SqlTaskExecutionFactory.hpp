@@ -82,12 +82,11 @@ public:
         for(int i = 0 ; i < lpipelines.size(); i++)
         {
 
-            ID_to_logicalPipeline[lpipelines[i].getPipelineId()] = &lpipelines[i];//首先记录一下每个pipeline的id和pipeline的对应
+            ID_to_logicalPipeline[lpipelines[i].getPipelineId()] = &lpipelines[i];
         }
         renamePipelineIds();
 
-        for(int i = 0 ; i < lpipelines.size(); i++){//下面就是要扫描pipeline，分析pipeline的类型，每个pipeline都需要进行记录。
-            // 需要根据pipeline类型来进行reg，并根据类型来记录关系
+        for(int i = 0 ; i < lpipelines.size(); i++){
 
 
             if(isTableScanPipeline(lpipelines[i]))

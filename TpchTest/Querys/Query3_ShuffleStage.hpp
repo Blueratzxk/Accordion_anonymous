@@ -329,7 +329,7 @@ int64|double|double|date32[day]|string|int64|
 
 
       l_orderkey,
-sum(l_extendedprice*(1-l_discount)) as revenue, //潜在的收入，聚集操作
+sum(l_extendedprice*(1-l_discount)) as revenue, //，
 o_orderdate,
      o_shippriority
 */
@@ -378,15 +378,15 @@ o_orderdate,
 
 
          l_orderkey,
-   sum(l_extendedprice*(1-l_discount)) as revenue, //潜在的收入，聚集操作
+   sum(l_extendedprice*(1-l_discount)) as revenue, //，
    o_orderdate,
         o_shippriority
    ----------------------------------------
-   l_orderkey, //订单标识
-   o_orderdate, //订单日期
-   o_shippriority //运输优先级
-   order by //排序操作
-   revenue desc, //降序排序，把潜在最大收入列在前面
+   l_orderkey, //
+   o_orderdate, //
+   o_shippriority //
+   order by //
+   revenue desc, //，
    o_orderdate;
 
 

@@ -42,8 +42,8 @@ class SqlTaskExecution {
 
     map<PlanNodeId,PipelineId> sourcePlanNodeId_To_LPipeline;
 
-    map<PipelineId, pair<std::shared_ptr<LogicalPipeline>,int>> sourceLogicalPipelineRegister;//记录所有source logicalpipeline
-    map<PipelineId, pair<std::shared_ptr<LogicalPipeline>, int>> tableScanLogicalPipelineRegister;//记录所有tablescan logical pipeline
+    map<PipelineId, pair<std::shared_ptr<LogicalPipeline>,int>> sourceLogicalPipelineRegister;
+    map<PipelineId, pair<std::shared_ptr<LogicalPipeline>, int>> tableScanLogicalPipelineRegister;
     map<PipelineId, pair<std::shared_ptr<LogicalPipeline>, int>> remoteSourceLogicalPipelineRegister;
 
 
@@ -54,7 +54,7 @@ class SqlTaskExecution {
 
 
     map<string,shared_ptr<JoinBridge>> joinBridges;
-    map<string, shared_ptr<LocalExchangeFactory>> localExchanges;//记录localExchange
+    map<string, shared_ptr<LocalExchangeFactory>> localExchanges;
 
 
 
@@ -215,7 +215,7 @@ public:
 
 
 
-    void RegATableScanLogicalPipeline(PipelineId pipeLineName, shared_ptr<LogicalPipeline> pipeline,vector<int> pipelineTypes,int initialConcurrent)//记录一个tablescanpipeline以及初始并发度
+    void RegATableScanLogicalPipeline(PipelineId pipeLineName, shared_ptr<LogicalPipeline> pipeline,vector<int> pipelineTypes,int initialConcurrent)
     {
         this->tableScanLogicalPipelineRegister[pipeLineName] = make_pair(pipeline ,initialConcurrent);
         this->taskContext->addPipelineContext(pipeLineName);
@@ -230,19 +230,19 @@ public:
     }
 
 
-    void RegSourceLogicalPipeline(PipelineId pipeLineName, shared_ptr<LogicalPipeline> pipeline,vector<int> pipelineTypes,int initialConcurrent)//记录一个sourcepipeline以及初始并发度
+    void RegSourceLogicalPipeline(PipelineId pipeLineName, shared_ptr<LogicalPipeline> pipeline,vector<int> pipelineTypes,int initialConcurrent)//sourcepipeline
     {
         this->sourceLogicalPipelineRegister[pipeLineName] = make_pair(pipeline, initialConcurrent);
         this->taskContext->addPipelineContext(pipeLineName);
     }
 
-    void RegRemoteSourceLogicalPipeline(PipelineId pipeLineName,shared_ptr<LogicalPipeline> pipeline,vector<int> pipelineTypes,int initialConcurrent)//记录一个sourcepipeline以及初始并发度
+    void RegRemoteSourceLogicalPipeline(PipelineId pipeLineName,shared_ptr<LogicalPipeline> pipeline,vector<int> pipelineTypes,int initialConcurrent)//sourcepipeline
     {
         this->remoteSourceLogicalPipelineRegister[pipeLineName] = make_pair(pipeline, initialConcurrent);
         this->taskContext->addPipelineContext(pipeLineName);
     }
 
-    void RegCPUJoinBridge(string bridgeName, shared_ptr<JoinBridge> bridge)//记录一个CPU join桥
+    void RegCPUJoinBridge(string bridgeName, shared_ptr<JoinBridge> bridge)//CPU join
     {
         this->joinBridges[bridgeName] = bridge;
     }

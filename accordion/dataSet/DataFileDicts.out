@@ -273,7 +273,7 @@
       "netAddr": "192.168.226.129:9080"
      }
     ],
-    "filePath": "/media/anonymous/Samsung_T5/dataSet/lineitem.tbl",
+    "filePath": "/media/anonymous/dataSet/lineitem.tbl",
     "fileType": "CSV",
     "tableName": "lineitem"
    }

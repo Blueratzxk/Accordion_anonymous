@@ -8,6 +8,7 @@
 #include "nlohmann/json.hpp"
 #include "../../DataSource/SchemaManager.hpp"
 #include <iostream>
+#include <fstream>
 #include "range/v3/view.hpp"
 class CSVTableFormatChecker
 {
@@ -59,12 +60,12 @@ public:
     {
         ifstream ReadFile;
 
-        ReadFile.open(fileName.c_str());//ios::in 表示以只读的方式读取文件
-        if(ReadFile.fail())//文件打开失败:返回0
+        ReadFile.open(fileName.c_str());
+        if(ReadFile.fail())
         {
             return false;
         }
-        else//文件存在
+        else
         {
             getline(ReadFile,firstLine,'\n');
             ReadFile.close();

@@ -784,11 +784,11 @@ var serverIp = '192.168.226.129:9080'
 	
 	function getQueryIdByWindowPara()
 	{
-		var url = location.search; //获取url中"?"符后的字串
-		if (url.indexOf("?") != -1) { //判断是否有参数
-			var str = url.substr(1); //从第一个字符开始 因为第0个是?号 获取所有除问号的所有符串
-			strs = str.split("="); //用等号进行分隔 （因为知道只有一个参数 所以直接用等号进分隔 如果有多个参数 要用&号分隔 再用等号进行分隔）
-			return strs[1];   //直接弹出第一个参数 （如果有多个参数 还要进行循环的）
+		var url = location.search; //url"?"
+		if (url.indexOf("?") != -1) { //
+			var str = url.substr(1); // 0?
+			strs = str.split("="); // （   & ）
+			return strs[1];   // （ ）
 		}
 	}
 	
@@ -799,35 +799,35 @@ var serverIp = '192.168.226.129:9080'
 	
 	
 			
-            // 设置ajax的参数
-            // 请求数据的url地址：接口地址
+            // ajax
+            // url：
             url: 'http://'+serverIp+'/v1/query/getQueryResultExtern/'+queryId,  
-            // 请求数据方式：get  post
+            // ：get  post
             type: 'get',    
            
-            // data:发送给接口的数据
+            // data:
             data:{},
-            // 请求成功之后要执行的回调函数
+            //
             success: function (dat) {
-                //dat:服务端返回的数据
+                //dat:
                 console.log(dat)
 				resolveData(dat)
 			
 		
             },
-            // 请求失败
+            //
             error: function (e) {
-                //alert('请求失败')
+                //alert('')
             }
         });
 		
 		
 		function createTable1(){
-			//创建表格
+			//
 			
 			var $table=$("<table></table>");
 			var $tr=$("<tr></tr>");
-			var $td=$("<td>Hello,我是td</td>");
+			var $td=$("<td>Hello,td</td>");
 			$tr.append($td);
 			$table.append($tr);
 			$("#resultTableBody").append('<tr><td><a href="#">Fortune 500</a></td><td class="hidden-xs">Gold Level Virtual Server</td><td>$ 2310.23</td><td><span class="label label-success label-sm">Paid</span></td></tr>');
