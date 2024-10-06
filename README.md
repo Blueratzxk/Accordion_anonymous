@@ -1,6 +1,6 @@
 
 
-!!!!!!!!!!! The logo location: (This project)/imgs/logo.png !!!!!!!!!!!
+ --> --> --> The logo location: (This project)/imgs/logo.png <-- <-- <-- 
 
 # Accordion: cloud-native data analysis in accordance with your mind
 
@@ -14,7 +14,7 @@ The first IQRE (Intra-Query Runtime Elasticity) SQL query engine (prototype).
 **Here is a demo:**
 
 
-!!!!!!!!!!! The demo GIF location: (This project)/imgs/UII.gif !!!!!!!!!!!
+ --> --> --> --> --> --> The demo GIF location: (This project)/imgs/UII.gif <-- <-- <-- <-- <-- <-- 
 
 
 # Prerequisites
